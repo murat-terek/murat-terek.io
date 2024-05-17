@@ -4,7 +4,6 @@
 
 Портфолио по Frontend.
 
-
 Вот несколько учебных примеров на react:
 
 1. [https://github.com/murat-terek/react-todo](https://github.com/murat-terek/react-todo) - Учебный пример, to do лист.
