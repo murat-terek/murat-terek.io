@@ -10,7 +10,7 @@
 
 3. [Python для Начинающих](https://murat-terek.github.io/3/3 - Python для Начинающих.html)
 
-4. [Python для Не Начинающих.html](https://murat-terek.github.io/4/4 - Python для Не Начинающих.html)
+4. [Python для Не Начинающих](https://murat-terek.github.io/4/4 - Python для Не Начинающих.html)
 
 5. [Полезные IT знания для IT интервью](https://murat-terek.github.io/5/5 - Полезные IT знания для IT интервью.html)
 
