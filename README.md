@@ -2,20 +2,21 @@
 
 Щумахуа Мурат ([https://github.com/murat-terek](https://github.com/murat-terek))
 
-Портфолио:
+Портфолио по Devops:
 
-[>>> Frontend <<<](https://murat-terek.github.io/Frontend/)
+1. [Linux для Начинающих](https://murat-terek.github.io/1/1 - Linux для Начинающих.html)
 
-
-
-Devops:
-
-1. [https://murat-terek.github.io/1/](https://murat-terek.github.io/1/) - Linux для Начинающих
-
-2. [https://murat-terek.github.io/2/](https://murat-terek.github.io/2/) - Linux для Не Начинающих
+2. [Linux для Не Начинающих](https://murat-terek.github.io/2/2 - Linux для Не Начинающих.html)
 
 3. [Python для Начинающих](https://murat-terek.github.io/3/3 - Python для Начинающих.html)
 
-4. [https://murat-terek.github.io/4/](https://murat-terek.github.io/4/) - классический лендинг с попапами и небольшим количеством анимации.
+4. [Python для Не Начинающих.html](https://murat-terek.github.io/4/4 - Python для Не Начинающих.html)
 
-5. [https://murat-terek.github.io/5/](https://murat-terek.github.io/5/) - а здесь был редизайн старого сайта ([https://zvuk.bz/](https://zvuk.bz/)), заказчик захотел специфический слайдер и пришлось его пилить с нуля.
+5. [Полезные IT знания для IT интервью](https://murat-terek.github.io/5/5 - Полезные IT знания для IT интервью.html)
+
+6. [Ansible На Русском Языке](https://murat-terek.github.io/6/6 - Ansible На Русском Языке.html) - изучаю в данный момент...
+
+---
+---
+---
+[>>> Frontend <<<](https://murat-terek.github.io/Frontend/)
