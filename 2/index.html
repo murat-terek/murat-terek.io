@@ -1,629 +1,789 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-
-	<meta charset="utf-8">
-
-	<title>Title</title>
-	<meta name="description" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	
-	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
-	<link rel="stylesheet" href="libs/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css">
-	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css">
-	<link rel="stylesheet" href="css/main.css">
-
-
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Liberation Serif";}
+@font-face
+	{font-family:"Liberation Mono";}
+@font-face
+	{font-family:"Liberation Sans";}
+@font-face
+	{font-family:"Noto Serif CJK SC";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Lohit Devanagari";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Noto Sans Mono CJK SC";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Noto Sans CJK SC";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	font-size:24.0pt;
+	font-family:"Liberation Serif",serif;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.0pt;
+	margin-left:0in;
+	line-height:115%;
+	punctuation-wrap:simple;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;}
+span.a
+	{mso-style-name:"Исходный текст";
+	font-family:"Liberation Mono",serif;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Liberation Serif",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:28.35pt 28.35pt 28.35pt 28.35pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
 
 </head>
 
-<body>
+<body lang=EN-US link=navy vlink="#954F72" style='word-wrap:break-word'>
 
-	<header class="az-header-background">
-		<div class="container">
-			<div class="az-header clearfix">
-				<div class="az-header__logo">
-					<div class="az-logo">
-						<img src="img/az-logo.png" alt="Stihl" class="az-logo__img">
-						<b class="az-logo__text">Система качества</b>
-					</div>
-				</div>
-				<div class="az-header__menu">
-					<nav class="az-menu">
-						<a href="#" class="az-menu__icon">Меню</a>
-						<ul class="az-menu__list">
-							<li class="az-menu__item hidden-xlg">
-								<a href="#" class="az-menu__link az-menu__link_close">Закрыть</a>
-							</li>
-							<li class="az-menu__item">
-								<a href="#" class="az-menu__link">Каталог</a>
-							</li>
-							<li class="az-menu__item">
-								<a href="#" class="az-menu__link">Заказы</a>
-							</li>
-							<li class="az-menu__item">
-								<a href="#" class="az-menu__link">Акции</a>
-							</li>
-							<li class="az-menu__item">
-								<a href="#" class="az-menu__link">Финансы</a>
-							</li>
-							<li class="az-menu__item">
-								<a href="#" class="az-menu__link">Тех-сервисы</a>
-							</li>
-							<li class="az-menu__item">
-								<a href="#" class="az-menu__link">Информация</a>
-							</li>
-							<li class="az-menu__item hidden-sm hidden-md hidden-lg">
-								<a href="#" class="az-menu__link az-exit">Выйти</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="az-header__control">
-					<ul class="az-control">
-						<li class="az-control__item">
-							<a href="#" class="az-control__manager js-click">Менеджер</a>
-							<div class="az-header-popup js-show">
-								<div class="az-header-popup__head ah-topbox">
-									<span class="ah-topbox__spanleft">Мои корзины</span>
-									<a href="#" class="ah-topbox__spanright">Все корзины</a>
-									<a href="#" class="az-header-popup__close">закрыть</a>
-								</div>
-								<div class="az-header-popup__table">
-									<div class="az-table az-table_popup">
-										<div class="az-table__top">
-											<div class="az-table__head">
-												<div class="az-table__row">
-													<div class="az-table__head-td az-header-popup__col">Название</div>
-													<div class="az-table__head-td az-header-popup__col">Основная сумма</div>
-													<div class="az-table__head-td az-header-popup__col">Расчетная сумма</div>
-												</div>
-											</div>
-										</div>
-										<div class="az-table__bottom">
-											<div class="az-table__body">
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
-													<div class="az-table__td az-header-popup__col">14.650</div>
-													<div class="az-table__td az-header-popup__col">-</div>
-												</div>
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
-													<div class="az-table__td az-header-popup__col">6.100</div>
-													<div class="az-table__td az-header-popup__col">4.840</div>
-												</div>
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
-													<div class="az-table__td az-header-popup__col">14.650</div>
-													<div class="az-table__td az-header-popup__col">3.200</div>
-												</div>
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
-													<div class="az-table__td az-header-popup__col">6.100</div>
-													<div class="az-table__td az-header-popup__col">4.840</div>
-												</div>
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
-													<div class="az-table__td az-header-popup__col">14.650</div>
-													<div class="az-table__td az-header-popup__col">56.800</div>
-												</div>
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
-													<div class="az-table__td az-header-popup__col">6.100</div>
-													<div class="az-table__td az-header-popup__col">4.840</div>
-												</div>
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
-													<div class="az-table__td az-header-popup__col">14.650</div>
-													<div class="az-table__td az-header-popup__col">3.200</div>
-												</div>
-												<div class="az-table__row">
-													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
-													<div class="az-table__td az-header-popup__col">6.100</div>
-													<div class="az-table__td az-header-popup__col">4.840</div>
-												</div>
-											</div>
-										</div>
-							        </div>
-								</div>
-							</div>
-						</li>
-						<li class="az-control__item">
-							<a href="#" class="az-control__basket js-click">Корзины</a>
-							<div class="az-header-popup az-header-popup_grey js-show">
-								<a href="#" class="az-header-popup__close">закрыть</a>
-								<div class="az-header-popup__box ah-managerinfo">
-									<div class="ah-managerinfo__imgbox">
-										<img src="img/ah-manager-img.jpg" class="img-responsive" alt="manager">
-									</div>
-									<div class="ah-managerinfo__content">
-										<span class="ah-managerinfo-span">Менеджер Ирина</span>
-										<span class="ah-managerinfo-span1">Телефон:<span>8 (980) 670-90-90</span></span>
-										<span class="ah-managerinfo-span1">Email:<span>irinam@stihl.com</span></span>
-									</div>
-								</div>
-								<div class="az-header-popup__button">
-									<a href="#" class="az-button">Зайти в чат</a>
-								</div>
-							</div>
-						</li>
-						<li class="az-control__item hidden-xs">
-							<a href="#" class="az-control__exit az-exit">Выйти</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+<div class=WordSection1>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<div class="az-orders">
-					<div class="az-orders__head ah-topbox">
-						<span class="ah-topbox__spanleft">Мои заказы</span>
-						<a href="#" class="ah-topbox__spanright">Все заказы</a>
-						<p class="az-topbox__p">Введите ваш логин и пароль для того, чтобы зайти на сайт</p>
-					</div>
-					<div class="az-orders__content">
-						<div class="az-table">
-							<div class="az-table__top">
-								<div class="az-table__head">
-									<div class="az-table__row">
-										<div class="az-table__head-td az-table__td_center az-table__col1">Дата <a href="#" class="az-sort">сортировать</a></div>
-										<div class="az-table__head-td az-table__col2">Название</div>
-										<div class="az-table__head-td az-table__col3">№</div>
-										<div class="az-table__head-td az-table__col4">Кол-во</div>
-										<div class="az-table__head-td az-table__col5">Цена</div>
-										<div class="az-table__head-td az-table__col6">Скидка</div>
-										<div class="az-table__head-td az-table__col7">Итоговая цена</div>
-										<div class="az-table__head-td az-table__col5">Цена</div>
-										<div class="az-table__head-td az-table__col6">Скидка</div>
-										<div class="az-table__head-td az-table__col7">Итоговая цена</div>
-									</div>
-								</div>
-							</div>
-							<div class="az-table__bottom">
-								<div class="az-table__body">
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
-										<div class="az-table__td az-table__col3">1130 200 0356</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
-										<div class="az-table__td az-table__col3">0000 881 0107</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
-										<div class="az-table__td az-table__col3">1130 200 0356</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
-										<div class="az-table__td az-table__col3">0000 881 0107</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
-										<div class="az-table__td az-table__col3">1130 200 0356</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
-										<div class="az-table__td az-table__col3">0000 881 0107</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
-										<div class="az-table__td az-table__col3">1130 200 0356</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
-										<div class="az-table__td az-table__col3">0000 881 0107</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
-										<div class="az-table__td az-table__col3">1130 200 0356</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
-										<div class="az-table__td az-table__col3">0000 881 0107</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
-										<div class="az-table__td az-table__col3">1130 200 0356</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
-										<div class="az-table__td az-table__col3">0000 881 0107</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
-										<div class="az-table__td az-table__col3">1130 200 0356</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-										<div class="az-table__td az-table__col5">4560.50</div>
-										<div class="az-table__td az-table__col6">15 %</div>
-										<div class="az-table__td az-table__col7">4280.50</div>
-									</div>
-									<div class="az-table__row">
-										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
-										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
-										<div class="az-table__td az-table__col3">0000 881 0107</div>
-										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-										<div class="az-table__td az-table__col5">2170.00</div>
-										<div class="az-table__td az-table__col6">2 %</div>
-										<div class="az-table__td az-table__col7">2156.00</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<div class="ah-requisites">
-					<div class="ah-discounts__topbox ah-topbox ah-requisites-topbox">
-						<span class="ah-topbox__spanleft">Мои реквизиты</span>
-						<a href="#" class="ah-topbox__spanright">Редактировать</a>
-					</div>
-					<div class="ah-requisites__content ah-reqcontent">
-						<div class="ah-reqcontent-wrapp1">
-							<div class="ah-reqcontent-wrapp">
-								<span class="ah-reqcontent-span">Название организвации:</span>
-								<span class="ah-reqcontent-span ah-reqspan">Общество с ограниченной ответственностью “Свобода”</span>
-								<span class="ah-reqcontent-span">ИНН:<span>0000000000089</span></span>
-								<span class="ah-reqcontent-span">КПП:<span>0000000000089</span></span>
-								<span class="ah-reqcontent-span">ОГРН:<span>0000000000089</span></span>
-								<span class="ah-reqcontent-span">ОКВД:<span>12520004678352923400</span></span>
-							</div>
-							<div class="ah-reqcontent-wrapp ah-reqwrapp1">
-								<span class="ah-reqcontent-span">Юридический и фактический адрес:</span>
-								<span class="ah-reqcontent-span ah-reqspan">г. Москва, ул. Краснознаменная, 125</span>
-								<span class="ah-reqcontent-span">Почтовый индекс:<span>349007</span></span>
-								<span class="ah-reqcontent-span">Банковские реквизиты:</span>
-								<span class="ah-reqcontent-span ah-reqspan">г. Москва, ул. Краснознаменная, 125</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-				<div class="ah-discounts">
-					<div class="ah-discounts__topbox ah-topbox">
-						<span class="ah-topbox__spanleft">Мои скидки</span>
-						<a href="#" class="ah-topbox__spanright">Все скидки</a>
-					</div>
-					<div class="ah-discounts__content az-scroll">
-						<ul class="ah-accord-list">
-							<li class="ah-accord-list__item ah-accord">
-								<a href="#" class="ah-accord__link">STIHL Machine Accesoires</a>
-								<div class="ah-accord__content" style="display: block;">
-									<a href="#" class="ah-accord__close"></a>
-									<span class="ah-accord__title">STIHL Machine Accesoires</span>
-									<div class="ah-accord__box1 ah-box1">
-										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
-										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
-									</div>
-									<div class="ah-accord__box2 ah-box2">
-										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
-										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
-									</div>
-								</div>
-							</li>
-							<li class="ah-accord-list__item ah-accord">
-								<a href="#" class="ah-accord__link">VIKING Machine Accesoires</a>
-								<div class="ah-accord__content">
-									<a href="#" class="ah-accord__close"></a>
-									<span class="ah-accord__title">VIKING Machine Accesoires</span>
-									<div class="ah-accord__box1 ah-box1">
-										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
-										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
-									</div>
-									<div class="ah-accord__box2 ah-box2">
-										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
-										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
-									</div>
-								</div>
-							</li>
-							<li class="ah-accord-list__item ah-accord">
-								<a href="#" class="ah-accord__link">Foresty & PPE</a>
-								<div class="ah-accord__content">
-									<a href="#" class="ah-accord__close"></a>
-									<span class="ah-accord__title">Foresty & PPE</span>
-									<div class="ah-accord__box1 ah-box1">
-										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
-										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
-									</div>
-									<div class="ah-accord__box2 ah-box2">
-										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
-										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
-									</div>
-								</div>
-							</li>
-							<li class="ah-accord-list__item ah-accord">
-								<a href="#" class="ah-accord__link">Fuels, Oils and Canisters</a>
-								<div class="ah-accord__content">
-									<a href="#" class="ah-accord__close"></a>
-									<span class="ah-accord__title">Fuels, Oils and Canisters</span>
-									<div class="ah-accord__box1 ah-box1">
-										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
-										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
-									</div>
-									<div class="ah-accord__box2 ah-box2">
-										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
-										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
-									</div>
-								</div>
-							</li>
-							<li class="ah-accord-list__item ah-accord">
-								<a href="#" class="ah-accord__link">Fuels, Oils and Canisters</a>
-								<div class="ah-accord__content">
-									<a href="#" class="ah-accord__close"></a>
-									<span class="ah-accord__title">Fuels, Oils and Canisters</span>
-									<div class="ah-accord__box1 ah-box1">
-										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
-										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
-									</div>
-									<div class="ah-accord__box2 ah-box2">
-										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
-										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ah-documents">
-					<div class="ah-discounts__topbox ah-topbox">
-						<span class="ah-topbox__spanleft">Мои документы</span>
-					</div>
-					<div class="ah-documents__content">
-						<div id="tabs" class="ah-tabs">
-						    <ul class="ah-tabs__topline ah-tabsheader">
-						        <li class="ah-tabsheader__item"><a href="#tab-1" class="ah-tabsheader-link">Договор</a></li>
-						        <li class="ah-tabsheader__item"><a href="#tab-2" class="ah-tabsheader-link ah-tablink2">Счета</a></li>
-						        <li class="ah-tabsheader__item"><a href="#tab-3" class="ah-tabsheader-link">Финансовые условия</a></li>
-						    </ul>
-						    <div class="ah-tabs__tabsbox ah-tabsbox">
-						        <div id="tab-1" class="ah-tabsbox__item">
-						        	<div class="az-table az-table_full-width">
-										<div class="az-table__top">
-											<div class="az-table__head">
-												<div class="az-table__row">
-													<div class="az-table__head-td az-table__td_center">Дата <a href="#" class="az-sort">сортировать</a></div>
-													<div class="az-table__head-td">Название</div>
-												</div>
-											</div>
-										</div>
-										<div class="az-table__bottom">
-											<div class="az-table__body">
-												<div class="az-table__row">
-													<div class="az-table__td az-table__td_center">19.03.17</div>
-													<div class="az-table__td"><a href="#" class="ah-tablink">Договор</a></div>
-												</div>
-											</div>
-										</div>
-									</div>
-						        </div>
-						        <div id="tab-2" class="ah-tabsbox__item">
-						            
-						            Контент второго таба
-						        </div>
-						        <div id="tab-3" class="ah-tabsbox__item">
-						            Контент третьего таба
-						        </div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-				<div class="ah-manager">
-					<div class="ah-manager__topbox ah-managertop">
-						<span class="ah-managertop-span">Чат с менеджером</span>
-					</div>
-					<div class="ah-manager__middlebox ah-managerinfo">
-						<div class="ah-managerinfo__imgbox">
-							<img src="img/ah-manager-img.jpg" class="img-responsive" alt="manager">
-						</div>
-						<div class="ah-managerinfo__content">
-							<span class="ah-managerinfo-span">Менеджер Ирина</span>
-							<span class="ah-managerinfo-span1">Телефон:<span>8 (980) 670-90-90</span></span>
-							<span class="ah-managerinfo-span1">Email:<span>irinam@stihl.com</span></span>
-						</div>
-					</div>
-					<div class="az-scroll ah-scrollheight">
-						<div class="ah-manager__bottombox ah-managerentry">
-							<div class="ah-managerentry__titlebox">
-								<span class="ah-managerentry-title">Сегодня</span>
-							</div>
-							<div class="ah-managerentry__graybox ah-managergray">
-								<div class="ah-managergray__box">
-									<span class="ah-managerentry-span">Здравствуйте!</span>
-									<span class="ah-managerentry-span">Чем могу вам помочь?</span>
-								</div>
-								<span class="ah-managergray__span">09:30</span>
-							</div>
-							<div class="ah-managerentry__whitebox ah-managerwhite">
-								<div class="ah-managerwhite__box1">
-									<span class="ah-managerwhite__span1">Денег в хату, здоровья семье и близким</span>
-								</div>
-								<span class="ah-managerwhite__span">10:15</span>
-							</div>
-							<div class="ah-managerentry__whitebox ah-managerwhite">
-								<div class="ah-managerwhite__box1">
-									<span class="ah-managerwhite__span1">Помогите пожалуйста</span>
-								</div>
-								<span class="ah-managerwhite__span">10:16</span>
-							</div>
-							<div class="ah-managerentry__graybox ah-managergray">
-								<div class="ah-managergray__box">
-									<span class="ah-managerentry-span">Всегда рада помочь :)</span>
-									<span class="ah-managerentry-span">Обращайтесь!</span>
-								</div>
-								<span class="ah-managergray__span">20:21</span>
-							</div>
-						</div>
-					</div>
-					<div class="ah-manager__textbox ah-managertext">
-						<form class="ah-managertext-form">
-							<input type="text" placeholder="Напиcать сообщение">
-							<input type="submit" value="">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<section class="ah-footer">
-	    <div class="container">
-	    	<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="ah-footer__box1 ahfooter1">
-						<div class="ahfooter1-left">
-							<span class="ahfooter1-span ahfooter1span1">Email:<span>B2BTest@stihl.gb</span></span>
-						</div>
-						<div class="ahfooter1-right">
-							<span class="ahfooter1-span ahfooter1span2">Телефон:<span>8 (980) 380-90-80</span></span>
-						</div>
-					</div>
-					<div class="ah-footer__box2 ahfooter2">
-						<div class="ahfooter2-left">
-							<a href="#" class="ahfooter2-span">ANDREAS STIHL LTD</a>
-							<a href="#" class="ahfooter2-span">STIHL House</a>
-						</div>
-						<div class="ahfooter2-right">
-							<a href="#" class="ahfooter2-span">Stanhope Road</a>
-							<a href="#" class="ahfooter2-span">Camberley Surrey GU15 3YT</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<h1><span lang=RU style='font-size:14.0pt'>1. Linux для Не Начинающих -
+Добавление второго диска</span></h1>
 
-	<script src="libs/jquery/dist/jquery.min.js"></script>
-	<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
-	<script src="js/scripts.min.js"></script>
+<p class=MsoBodyText><b><span lang=RU style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/dev/sda    </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- первый SATA диск</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/dev/sdb    </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- второй SATA диск</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/dev/sdc    -</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'> третий SATA диск</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>fdisk –l,   lsblk    </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>-  показать какие есть диски</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>cfdisk   /dev/sdb  </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- редактировать разделы sdb диска</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>mkfs.ntfs  –f  /dev/sdb1 </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- форматировать в</span><span
+style='font-size:14.0pt;line-height:115%'> NTFS </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>первый раздел второго диска</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/etc/fstab   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- тут прописываем новые диски чтобы
+они присоединялись автоматически при загрузки Линукса</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>mount /media/hdd2   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- присоединяет диск прописанный в
+файле fstab с именем hdd2 без перезагрузки Линукса</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>---</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>umount /dev/nvme0n1p6  </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- отмонтировать диск (</span><span
+style='font-size:14.0pt;line-height:115%'>SSD MVMe - </span><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>nvme0n1p6</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>---</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>  umount /dev/sda3</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>  sudo ntfsfix /dev/sda3</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>  </span><span style='font-size:14.0pt;
+line-height:115%;font-family:"Liberation Mono",serif'>mount /dev/sda3</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%'>Если
+при попытке монтирования диска </span></i><span lang=RU style='font-size:14.0pt;
+line-height:115%;font-family:"Liberation Mono",serif'>sda3 </span><i><span
+lang=RU style='font-size:14.0pt;line-height:115%'>с файловой системой NTFS вы получаете:</span></i></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>«The disk contains an unclean file system
+(0, 0).</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>Metadata kept in Windows cache, refused to
+mount......»</span></p>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%'>Диск
+монтируется, но только для чтения. </span></i></p>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%'>&nbsp;</span></i></p>
+
+<p class=MsoBodyText><span lang=RU>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;line-height:115%;font-family:"Liberation Serif",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></i></p>
+
+<p class=MsoBodyText><b><span lang=RU style='font-size:14.0pt;line-height:115%'>2.
+Linux для Не Начинающих - Изменение имени компа и IP на постоянный</span></b></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>hostname    </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- вывести название компа</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>sudo hostname MyLinux   </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- присвоить имя компа «MyLinux</span><span
+lang=RU style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>»</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/etc/hostname   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- тут прописано название компа</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/etc/hosts  </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- тут прописываем новое название
+напротив IP адреса</span></p>
+
+<p class=MsoBodyText style='margin-left:28.35pt;text-indent:-25.5pt'><span
+class=a><span lang=RU style='font-size:14.0pt;line-height:115%'>sudo systemctl
+restart networking  -</span></span><span lang=RU style='font-size:14.0pt;
+line-height:115%'> перезапустить сеть </span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>ifconfig   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- вывести текущий IP адрес</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText style='margin-left:28.35pt;text-indent:-28.35pt'><span
+lang=RU style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>sudo 
+ifconfig  eth0  10.10.10.10  netmask  255.0.0.0    </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>-временно меняем IP адрес</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%'>До
+17.10 версии:</span></i></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/etc/network/interfaces  </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- тут прописываем постоянный
+IP адрес </span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>auto
+lo</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>iface
+lo inet loopback</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>auto
+enp0s3</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>iface
+enp0s3 inet static</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'> 
+address 192.168.1.123</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'> 
+netmask 255.255.255.0</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'> 
+gateway 192.168.1.1</span></p>
+
+<p class=MsoBodyText style='margin-left:68.05pt'><span lang=RU
+style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'> 
+dns-nameservers 8.8.8.8, 77.88.8.8</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>sudo ifdown eth0    </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- отключить сетевуху eth0</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>sudo ifup   eth0      </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- включить сетевуху eth0</span><span
+lang=RU><br clear=all style='page-break-before:always'>
+</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>---</span></p>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%'>С
+17.10 версии:</span></i></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/etc/netplan/<u>xxx</u>.yaml   </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- тут прописываем постоянный
+IP адрес </span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:8.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+color:black'>примерное содержимое <i>(с 17.10 версии Ubuntu):</i></span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>network:</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>  version: 2</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>  renderer:
+NetworkManager</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>  ethernets:</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>    enp7s0:</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>      dhcp4: no</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>      addresses: [
+192.168.1.123/24 ]</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>      gateway4:
+192.168.1.1</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>      nameservers:</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>        addresses:
+[ 8.8.8.8, 77.88.8.8 ]</span></p>
+
+<p class=MsoBodyText style='margin-left:51.0pt'><span lang=RU style='font-size:
+8.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+color:black'>примерное содержимое <i>(с</i></span><i><span lang=RU
+style='font-size:14.0pt;line-height:115%'> 22.04 версии </span></i><i><span
+style='font-size:14.0pt;line-height:115%'>Ubuntu, </span></i><i><span lang=RU
+style='font-size:14.0pt;line-height:115%'>новый синтаксис</span></i><i><span
+style='font-size:14.0pt;line-height:115%'>)</span></i><i><span lang=RU
+style='font-size:14.0pt;line-height:115%'>:</span></i></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>network:</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>  version: 2</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>  renderer: NetworkManager</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>  ethernets:</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>    enp7s0:</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>      dhcp4: no</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>      addresses:</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>        - 192.168.1.123/24</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>      </span><span style='font-size:14.0pt;
+line-height:115%;font-family:"Liberation Mono",serif'>routes</span><span
+lang=RU style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>:</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>        - </span><span style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>to: default</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>          </span><span style='font-size:
+14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>via: </span><span
+lang=RU style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>192.168.1.1</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>      nameservers:</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>        addresses:</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>          - 8.8.8.8</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>          - 77.88.8.8</span><span lang=RU><br
+clear=all style='page-break-before:always'>
+</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>sudo netplan apply   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- применяем измененные параметры сети</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>---</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>nmcli dev show  </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- вывести полную информацию о сетях</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>systemd-resolve --status   </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- инфа по DNS серверам (в
+т.ч. и текущему)</span></p>
+
+<span lang=RU style='font-size:12.0pt;line-height:115%;font-family:"Liberation Serif",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><b><span lang=RU style='font-size:14.0pt;line-height:115%'>3.
+Linux для Не Начинающих - SSH подключение к удаленному Linux</span></b></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>service ssh status   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- проверить статус SSH сервиса</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>service ssh start   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- запустить SSH сервис</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>apt-get install openssh-server   </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- установить SSH</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>ssh vasya@192.168.10.130   </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- подключиться к компу
+(192.168.10.130) по </span><span style='font-size:14.0pt;line-height:115%'>ssh </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>как пользователь (vasya)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>PuTTY,
+MobXterm       - Windows программы для подключения по </span><span
+style='font-size:14.0pt;line-height:115%'>SSH</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>---</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>в
+VirtualBox нужно выбрать режим сети «Сетевой мост», чтобы виртуальная машина
+имела доступ в интернет и была доступна в сети.</span></p>
+
+<span lang=RU style='font-size:12.0pt;line-height:115%;font-family:"Liberation Serif",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><b><span lang=RU style='font-size:14.0pt;line-height:115%'>4.
+Linux для Не Начинающих - Выполнение по расписанию - crontab</span></b></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>crontab - l    </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- показать расписание</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>crontab -e   </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- редактировать расписание</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>/etc/crontab  </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>- файл расписания на системном уровне</span></p>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>sudo cat /var/spool/cron/crontabs/denis  </span></i><span
+lang=RU style='font-size:14.0pt;line-height:115%'>- уровень пользователя </span><span
+style='font-size:14.0pt;line-height:115%'>(crontab)</span></p>
+
+<p class=MsoBodyText><i><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>sudo cat /var/log/syslog | grep CRON</span></i><i><span
+lang=RU style='font-size:14.0pt;line-height:115%;font-family:"Liberation Mono",serif'>
+</span></i><i><span style='font-size:14.0pt;line-height:115%'>   </span></i><span
+style='font-size:14.0pt;line-height:115%'>- </span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>лог</span><span style='font-size:
+14.0pt;line-height:115%'> crontab</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>* * * * * command(s)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>| | | | |</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>| | | | ----- Day of week (0 - 7)
+(Sunday=0 or 7)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>| | | ------- Month (1 - 12)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>| | --------- Day of month (1 - 31)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>| ----------- Hour (0 - 23)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>------------- Minute (0 — 59)</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%;
+font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>Первые
+пять полей могут содержать одно или несколько значений, разделенных запятой или
+диапазон значений, разделенных дефисом.</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>   
+* - оператор звездочки означает любое значение или всегда. Если в поле «Час»
+имеется символ звездочки, это означает, что задание будет выполняться каждый
+час.</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>   
+, - оператор запятой позволяет указать список значений для повторения.
+Например, если у вас есть 1,3,5 в поле Час, задание будет выполняться в 1, 3 и
+5 часов утра.</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>   
+- - оператор дефиса позволяет указать диапазон значений. Если в поле «День
+недели» указано значение 1–5, задание будет выполняться каждый рабочий день (с
+понедельника по пятницу).</span></p>
+
+<p class=MsoBodyText><span lang=RU style='font-size:14.0pt;line-height:115%'>   
+/ - оператор косой черты позволяет указать значения, которые будут повторяться
+в течение определенного интервала между ними. Например, если в поле «Час»
+указано */4, это означает, что действие будет выполняться каждые четыре часа.
+Это то же самое, что указание 0,4,8,12,16,20. Вместо звездочки перед оператором
+косой черты можно также использовать диапазон значений, 1-30/10 означает то же,
+что и 1,11,21.</span><span lang=RU><br clear=all style='page-break-before:always'>
+</span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;margin-left:
+14.15pt;text-align:justify;text-indent:-14.15pt'><span lang=RU
+style='font-size:14.0pt'>5. Linux - Использование SSH ключа вместо Пароля | SSH
+Key Pair</span></h1>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><b><span
+lang=RU style='font-size:14.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>ssh-keygen
+(<span lang=RU>описание</span>)  - это утилита командной строки, используемая
+для генерации и управления ключами SSH</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>ssh-keygen
+(<span lang=RU>запуск без ключей)   - запросит имя и пароль на ключ (пароль
+можно пропустить), на выходе будет приватный ключ с указанным именем, но без
+всякого расширения, а публичный будет так же с этим именем, но с расширением <b>.</b></span><b>pub</b><span
+lang=RU>)</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>ssh-keygen (в любом месте, но сейчас сделаем на главном в </span>~/demo/<span
+lang=RU>, указать имя </span><b>mykey,</b> <span lang=RU>без пароля</span>)   -
+<span lang=RU>создастся приватный ключ </span><b>~/demo/mykey</b> <span
+lang=RU>и публичный ключ  </span><b>~/demo/mykey<span lang=RU>.</span></b><b>pub</b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>scp
+~/demo/mykey.pub murat@172.16.0.11:/tmp - <span lang=RU>скопировать публичный
+ключ </span><b>~/demo/mykey.pub</b> <span lang=RU>на сервер </span><b>172.16.0.11</b>
+<span lang=RU>в папку <b>/</b></span><b>tmp</b>, <span lang=RU>авторизовавшись
+под именем </span><b>murat</b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>cat
+/tmp/mykey.pub &gt;&gt; ~/.ssh/authorized_keys   - <span lang=RU>добавить ранее
+скопированный публичный ключ </span><b>/tmp/mykey.pub</b> <span lang=RU>в конец
+файла </span><b>~/.ssh/authorized_keys</b> <span lang=RU>(если его не
+существует, то он создастся)</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>chmod
+0600 ~/.ssh/authorized_keys   - <span lang=RU>установить только права </span>RW
+<span lang=RU>владельцу файлу </span><b>authorized_keys</b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>chmod
+0600 ~/.ssh/id_rsa   - <span lang=RU>установить только права </span>RW <span
+lang=RU>владельцу файлу </span><b>id_rsa</b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>ssh
+-i ~/demo/mykey murat@172.16.0.11   - <span lang=RU>подключение по </span>ssh <span
+lang=RU>к 172.16.0.11 (</span>user – murat), <span lang=RU>используя приватный
+ключ </span>~/demo/mykey</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>~/.ssh/known_hosts  
+- <span lang=RU>файл где хранятся открытые ключи серверов (компьютеров), к
+которым подключались ранее (если уже один раз подключились, то не будет ни
+каких вопросов при следующих подключениях)</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>~/.ssh/id_rsa  
+- <span lang=RU>файл с приватным ключем, который система использует по
+умолчанию (если он есть, то можно подключаться по </span>ssh, <span lang=RU>не
+указывая ключ и пароль соответствующего удаленного сервера)</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>&nbsp;</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>---</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>cat
+/etc/os-release   - <span lang=RU>узнать версию </span>Linux<span lang=RU><br
+clear=all style='page-break-before:always'>
+</span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;margin-left:
+14.15pt;text-align:justify;text-indent:-14.15pt'><span style='font-size:14.0pt'>6</span><span
+lang=RU style='font-size:14.0pt'>. Linux - Использование множества SSH ключей
+для подключения на разные Linux | ssh config</span></h1>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><b><span
+lang=RU style='font-size:14.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>Глобальный файл конфигурации </span>SSH <span lang=RU>в </span>Linux  
+- /etc/ssh/ssh_config</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>Пользовательский файл конфигурации </span>SSH <span lang=RU>в </span>Linux  
+- ~/.ssh/config</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>Глобальный файл конфигурации </span>SSH <span lang=RU>в</span>
+Windows   - C:\ProgramData\ssh\sshd_config</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>Пользовательский файл конфигурации </span>SSH <span lang=RU>в</span>
+Windows   - C:\Users\murat\.ssh\config</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>Приоритет конфигураций </span>SSH   - <span lang=RU>терминал,
+пользовательская конфигурация, глобальная конфигурация</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>chmod
+0600 ~/.ssh/config   - <span lang=RU>установить только права </span>RW <span
+lang=RU>владельцу файла <b>c</b></span><b>onfig</b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>&nbsp;</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+lang=RU>Пример файла конфигурации </span>SSH   -</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>Host server1</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   HostName 172.16.0.11</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   User murat</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   Port 22</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-size:3.0pt;font-family:"Liberation Mono",serif'> </span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>Host server2</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   HostName 172.16.0.12</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   User murat</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-size:3.0pt;font-family:"Liberation Mono",serif'> </span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>Host server3</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   HostName 172.16.0.13</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   User murat</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   IdentityFile ~/.ssh/serv3-key</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-size:3.0pt;font-family:"Liberation Mono",serif'> </span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>Host *</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   StrictHostKeyChecking no</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'><span
+style='font-family:"Liberation Mono",serif'>   UserKnownHostsFile /dev/null</span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>IdentityFile
+~/.ssh/serv3-key  (SSH config)   - <span lang=RU>(</span>SSH config) <span
+lang=RU>указать приватный ключ </span><b>~/.ssh/serv3-key</b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>StrictHostKeyChecking
+no  <span lang=RU>(</span>SSH config)   - <span lang=RU>(</span>SSH config) <span
+lang=RU>не реагировать на</span> неопознанный или измененный ключ</p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'>UserKnownHostsFile
+/dev/null  (SSH config)   - <span lang=RU>(</span>SSH config) <span lang=RU>не
+создавать файл </span><b>known_hosts</b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:7.1pt;
+margin-left:14.15pt;text-align:justify;text-indent:-14.15pt;line-height:normal'> </p>
+
+</div>
 
 </body>
+
 </html>

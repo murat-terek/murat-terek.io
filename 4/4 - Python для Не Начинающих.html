@@ -1,0 +1,542 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+@font-face
+	{font-family:NSimSun;
+	panose-1:2 1 6 9 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@NSimSun";}
+@font-face
+	{font-family:"Liberation Serif";}
+@font-face
+	{font-family:"Liberation Sans";}
+@font-face
+	{font-family:"Liberation Mono";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",sans-serif;}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Liberation Serif",sans-serif;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Liberation Serif",sans-serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:28.35pt 28.35pt 28.35pt 28.35pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:28.35pt 28.35pt 28.35pt 28.35pt;}
+div.WordSection2
+	{page:WordSection2;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'>1. </span></b><b><span
+lang=RU style='font-size:14.0pt'>Алгоритмы на Python 3 - Рекурсия: Сумма Чисел,
+Факториал, Фибоначчи - Recursion</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Код:</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&quot;&quot;&quot;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>Recursion
+Functions</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>1)
+privet</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>2)
+privet n times</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>3)
+Sum 0+1+2+3+4+5</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>4)
+Factorial   5! = 1*2*3*4*5 = 120</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>5)
+Fibonacci   0,1,1,2,3,5,8,13,21,34,55,89</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&quot;&quot;&quot;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>def
+privet(x):</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+if x == 0:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+else:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+print(&quot;Hello World!&quot;)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+privet(x-1)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>privet(4)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>def
+sum(x):</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+if x == 0:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return 0</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+elif x == 1:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return 1</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+else:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return x + sum(x-1)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>z
+= sum(5)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>print(z)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>def
+factorial(x):</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+if x == 0:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return 1</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+else:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return x * factorial(x-1)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>print(factorial(5))</span></p>
+
+</div>
+
+<span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>1. Алгоритмы на
+Python 3 - Рекурсия: Сумма Чисел, Факториал, Фибоначчи - Recursion</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>...Код:</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>def
+fido(x):</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+if x == 0:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return 0</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+elif x == 1:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return 1</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>   
+else:</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>       
+return fido(x-1) + fido(x-2)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>print(fido(7))</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>------</span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Результат:</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>Hello
+World!</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>Hello
+World!</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>Hello
+World!</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>Hello
+World!</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>15</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>120</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>13</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>2. Алгоритмы на
+Python 3 - Бинарный-Двоичный Поиск / Binary Search</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Код:</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>def binarysearch(mylist, iskat,
+start, stop):</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>    if start &gt; stop:</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>        return False</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>    else:</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>        mid = (start + stop) // 2</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>        if iskat == mylist[mid]:</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>            return mid</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>        elif iskat &lt;
+mylist[mid]:</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>            return
+binarysearch(mylist, iskat, start, mid - 1)</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>        else:</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>            return
+binarysearch(mylist, iskat, mid + 1, stop)</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>mylist = [10, 12, 13, 15, 20, 24,
+27, 33, 42, 51, 57, 68, 70, 77, 79, 81]</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>iskat = 12</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>start = 0</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>stop = len(mylist) - 1</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>x = binarysearch(mylist, iskat,
+start, stop)</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>if x is False:</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>    print(&quot;Item &quot;, iskat,
+&quot; Not Found!&quot;)</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>else:</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>    print(&quot;Item &quot;, iskat,
+&quot; Found at Index &quot;, x)</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>------</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Результат:</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>Item 
+12  Found at Index  1</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>3. Алгоритмы на
+Python 3 - Сортировка Пузырьком | Bubble Sort</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Код:</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>for
+x in range(0, 5):</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>3. Алгоритмы на
+Python 3 - Сортировка Пузырьком | Bubble Sort</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Результат:</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>0</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>4. Как писать
+Скрипты на Python - Скрипт Очистки Лог-файлов</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Код:</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>cities
+= ['New York', 'Moscow', 'new dehli', 'Simferopol', 'Toronto']</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>4. Как писать
+Скрипты на Python - Скрипт Очистки Лог-файлов</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:14.0pt'>Результат:</span></b></p>
+
+<p class=MsoNormal><b><span lang=RU>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>['New York', 'Moscow', 'new dehli',
+'Simferopol', 'Toronto']</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>5</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU>&nbsp;</span></p>
+
+<h1 style='margin-top:5.65pt;margin-right:0in;margin-bottom:0in;margin-left:
+0in'><span lang=RU style='font-size:14.0pt'>5. Как писать Скрипты на Python -
+Скрипт Удаления Старых Файлов и Пустых Директорий</span></h1>
+
+<p class=MsoNormal style='margin-top:5.65pt'><b><span lang=RU style='font-size:
+14.0pt'>Код:</span></b></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>#        
+0      1      2       3        4</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<h1 style='margin-top:5.65pt;margin-right:0in;margin-bottom:0in;margin-left:
+0in'><span lang=RU style='font-size:14.0pt'>5. Как писать Скрипты на Python -
+Скрипт Удаления Старых Файлов и Пустых Директорий</span></h1>
+
+<p class=MsoNormal style='margin-top:5.65pt'><b><span lang=RU style='font-size:
+14.0pt'>Результат:</span></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>BMW</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<h1 style='margin:0in'><span lang=RU style='font-size:14.0pt'>6. Python Flask
+для Вэб Приложений - Деплой Flask в AWS Elastic Beanstalk</span></h1>
+
+<p class=MsoNormal style='margin-top:4.25pt'><b><span lang=RU style='font-size:
+14.0pt'>Код:</span></b></p>
+
+<p class=MsoNormal style='margin-top:4.25pt'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:4.25pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>#    (-----Item-----)</span></p>
+
+<p class=MsoNormal style='margin-top:4.25pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:4.25pt'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:4.25pt'><span lang=RU>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-top:4.25pt'><span lang=RU style='font-size:
+14.0pt'>&nbsp;</span></p>
+
+<h1 style='margin:0in'><span lang=RU style='font-size:14.0pt'>6. Python Flask
+для Вэб Приложений - Деплой Flask в AWS Elastic Beanstalk</span></h1>
+
+<p class=MsoNormal style='margin-top:5.65pt'><b><span lang=RU style='font-size:
+14.0pt'>Результат:</span></b></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>{'loc_x': 70, 'loc_y': 50, 'color':
+'green', 'health': 100, 'name': 'Mudillo'}</span></p>
+
+<p class=MsoNormal style='margin-top:5.65pt'><span lang=RU style='font-size:
+14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<span lang=RU style='font-size:12.0pt;font-family:"Liberation Serif",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;font-family:"Liberation Mono",serif'>&nbsp;</span></p>
+
+<h1 style='margin:0in'><span lang=RU style='font-size:14.0pt'>&nbsp;</span></h1>
+
+</div>
+
+</body>
+
+</html>
